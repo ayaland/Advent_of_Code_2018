@@ -7,5 +7,6 @@ try:
     for line in datafile:
         frequency += int(line)
     print(frequency)
+
 except IOerror:
     print("Error. File not found.")

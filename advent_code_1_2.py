@@ -1,17 +1,14 @@
-# declare var frequency and an empty set
+def find_repeat():
 
-# loop through input.txt, add to frequency
-# append frequency to list
-# break loop if match
-# otherwise repeat
-
-
-def findRepeat():
-
+    # declare var frequency and an empty set
     datafile = open('input.txt', 'r').readlines()  # this is a list
     frequency = 0
     frequencies = set()
 
+    # loop through input.txt, add to frequency
+    # append frequency to list
+    # break loop if match
+    # otherwise repeat
     while True:
         for item in datafile:
             frequency += int(item)
@@ -20,25 +17,6 @@ def findRepeat():
             else:
                 frequencies.add(frequency)
 
-    # while x < 10:
-    #     print(datafile)
-    #     for line in datafile:
-    #         if frequency not in frequencies:
-    #             frequency += int(line) # adds line to total
-    #             frequencies.append(int(frequency)) # adds total to list
-    #         else:
-    #             print(x)
-    #             return frequency
-    #     x += 1
 
-#     #     frequency += int(line)
-#     #     if frequency in frequencies:
-#     #         print("SDLFHASLIFUSHDFLEFUGH")
-#     #         flag = true
-#     #         break
-#     #     else:
-#     #         frequencies.append(int(frequency))
-#     # return frequency
-
-freq = findRepeat()
+freq = find_repeat()
 print(freq)

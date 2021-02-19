@@ -1,5 +1,4 @@
-
-def findMatches():
+def find_matches():
     datafile = open('input-2.txt', 'r').readlines()
     boxes = []
 
@@ -11,12 +10,12 @@ def findMatches():
     for i in range(len(boxes) - 1):
         # compare item to all other items, but only if the index is larger
         for j in range(i + 1, len(boxes)):
-            bewl = compareBoxes(boxes[i], boxes[j])
+            bewl = compare_boxes(boxes[i], boxes[j])
             if bewl:
                 return ''.join(bewl)
 
 
-def compareBoxes(box1, box2):
+def compare_boxes(box1, box2):
     count = 0
     answer = []
     # compare boxes[i], boxes[j]
@@ -31,5 +30,5 @@ def compareBoxes(box1, box2):
         return answer
 
 
-result = findMatches()
+result = find_matches()
 print(result)

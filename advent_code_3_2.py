@@ -1,7 +1,8 @@
 from advent_code_3_1 import parse_data, make_pairs
 # parse_data returns list of (x, y) and (w, h) tuples as each item
 # note this data is in str form
-# [ ((x1, y1), (w1, h1)),
+# [
+#   ((x1, y1), (w1, h1)),
 #   ((x2, y2), (w2, h2))
 # ]
 import itertools

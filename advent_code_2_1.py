@@ -1,7 +1,7 @@
 from collections import Counter
 
 
-def calcChecksum():
+def calc_check_sum():
     datafile = open('input-2.txt', 'r').readlines()
     two_count = 0
     three_count = 0
@@ -19,5 +19,5 @@ def calcChecksum():
     return two_count * three_count
 
 
-checksum = calcChecksum()
+checksum = calc_check_sum()
 print(checksum)
